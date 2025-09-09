@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plush Award - AI毛绒玩具设计平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🧸</span>
+                <span class="logo-text">Plush Award</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我们</a></li>
+                <li><a href="#products" class="nav-link">产品展示</a></li>
+                <li><a href="#community" class="nav-link">用户社区</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 英雄区域 -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">AI赋能</span>
+                        <br>
+                        <span class="cute-text">萌动未来</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        结合人工智能技术，打造最具创意的毛绒玩具设计平台
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">开始创作</button>
+                        <button class="btn btn-secondary">了解更多</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-teddy">
+                        <div class="teddy-bear">🧸</div>
+                        <div class="ai-circuit"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特色功能 -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">AI智能设计功能</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up">
+                        <div class="feature-icon">🎨</div>
+                        <h3>智能配色</h3>
+                        <p>AI自动分析色彩搭配，为您的毛绒玩具推荐最佳配色方案</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI生成</h3>
+                        <p>基于深度学习，一键生成独特的毛绒玩具造型设计</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">💫</div>
+                        <h3>3D预览</h3>
+                        <p>实时3D渲染，让您的设计作品栩栩如生</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品展示 -->
+        <section id="products" class="products">
+            <div class="container">
+                <h2 class="section-title">精选作品</h2>
+                <div class="products-grid">
+                    <div class="product-card" data-aos="zoom-in">
+                        <div class="product-image">
+                            <div class="product-placeholder">🐻</div>
+                            <div class="product-overlay">
+                                <button class="view-btn">查看详情</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>智能小熊</h4>
+                            <p>AI设计的交互式泰迪熊</p>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="product-image">
+                            <div class="product-placeholder">🐰</div>
+                            <div class="product-overlay">
+                                <button class="view-btn">查看详情</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>科技兔兔</h4>
+                            <p>具有LED灯效的未来兔子</p>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="product-image">
+                            <div class="product-placeholder">🦄</div>
+                            <div class="product-overlay">
+                                <button class="view-btn">查看详情</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h4>梦幻独角兽</h4>
+                            <p>会发光的魔法独角兽</p>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 用户评价 -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">用户心声</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <p>"Plush Award的AI设计功能太棒了！我轻松就设计出了梦想中的毛绒玩具。"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👩</div>
+                                <div class="author-info">
+                                    <h5>小美</h5>
+                                    <span>玩具设计师</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"从来没想过AI可以帮我设计出这么可爱的毛绒玩具，效果超出预期！"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👨</div>
+                                <div class="author-info">
+                                    <h5>阿强</h5>
+                                    <span>创意总监</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区域 -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>开启你的AI毛绒玩具创作之旅</h2>
+                    <p>加入我们的创作者社区，发现无限可能</p>
+                    <button class="btn btn-primary btn-large">立即开始</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🧸</span>
+                        <span class="logo-text">Plush Award</span>
+                    </div>
+                    <p>AI赋能的毛绒玩具设计平台</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="#">AI设计工具</a></li>
+                        <li><a href="#">3D预览</a></li>
+                        <li><a href="#">素材库</a></li>
+                        <li><a href="#">模板中心</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>社区</h4>
+                    <ul>
+                        <li><a href="#">设计师论坛</a></li>
+                        <li><a href="#">作品展示</a></li>
+                        <li><a href="#">教程中心</a></li>
+                        <li><a href="#">活动公告</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">客服支持</a></li>
+                        <li><a href="#">商务合作</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Plush Award. 保留所有权利.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📱</a>
+                    <a href="#" class="social-link">📧</a>
+                    <a href="#" class="social-link">🐦</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
