@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plush Award - AI毛绒玩具设计平台</title>
+    <title>2025全球玩具AI设计大赛 - Global AI Toy Design Competition 2025</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="particles-js"></div>
     
+
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <span class="logo-icon">🧸</span>
-                <span class="logo-text">Plush Award</span>
+                <span class="logo-text">AI玩具设计大赛</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">首页</a></li>
-                <li><a href="#about" class="nav-link">关于我们</a></li>
-                <li><a href="#products" class="nav-link">产品展示</a></li>
-                <li><a href="#community" class="nav-link">用户社区</a></li>
-                <li><a href="#contact" class="nav-link">联系我们</a></li>
+                <li><a href="#progress" class="nav-link">赛事进程</a></li>
+                <li><a href="#awards" class="nav-link">奖项设置</a></li>
+                <li><a href="#jury" class="nav-link">评委阵容</a></li>
+                <li><a href="#rules" class="nav-link">参赛须知</a></li>
             </ul>
+            <div class="language-switch">
+                <button class="lang-btn active" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="en">English</button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -36,140 +40,113 @@
     <main>
         <!-- 英雄区域 -->
         <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="hero-pattern"></div>
+            </div>
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="gradient-text">AI赋能</span>
-                        <br>
-                        <span class="cute-text">萌动未来</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        结合人工智能技术，打造最具创意的毛绒玩具设计平台
-                    </p>
-                    <div class="hero-buttons">
-                        <button class="btn btn-primary">开始创作</button>
-                        <button class="btn btn-secondary">了解更多</button>
+                <div class="hero-left">
+                    <div class="hero-character character-1">
+                        <div class="character-body">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop&crop=center" alt="Teddy Bear" class="character-image">
+                        </div>
+                        <div class="character-balloons">
+                            <div class="balloon balloon-1">🎈</div>
+                            <div class="balloon balloon-2">🎈</div>
+                            <div class="balloon balloon-3">🎈</div>
+                        </div>
+                        <div class="character-slide"></div>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="floating-teddy">
-                        <div class="teddy-bear">🧸</div>
-                        <div class="ai-circuit"></div>
+                <div class="hero-center">
+                    <div class="hero-title-container">
+                        <h1 class="hero-title">
+                            <span class="title-main">Plush Award</span>
+                            <span class="title-sub">2025</span>
+                        </h1>
+                        <p class="hero-subtitle">全球毛绒玩具设计大赛</p>
+                        <p class="hero-tagline">用创意点亮童心，让温暖触手可及</p>
                     </div>
+                    <div class="hero-countdown">
+                        <div class="countdown-circle">
+                            <span class="countdown-number">0</span>
+                        </div>
+                        <p class="countdown-text">天倒计时</p>
+                    </div>
+                    <button class="hero-cta-btn">立即参赛</button>
                 </div>
-            </div>
-        </section>
-
-        <!-- 特色功能 -->
-        <section id="features" class="features">
-            <div class="container">
-                <h2 class="section-title">AI智能设计功能</h2>
-                <div class="features-grid">
-                    <div class="feature-card" data-aos="fade-up">
-                        <div class="feature-icon">🎨</div>
-                        <h3>智能配色</h3>
-                        <p>AI自动分析色彩搭配，为您的毛绒玩具推荐最佳配色方案</p>
-                    </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="feature-icon">🤖</div>
-                        <h3>AI生成</h3>
-                        <p>基于深度学习，一键生成独特的毛绒玩具造型设计</p>
-                    </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="feature-icon">💫</div>
-                        <h3>3D预览</h3>
-                        <p>实时3D渲染，让您的设计作品栩栩如生</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 产品展示 -->
-        <section id="products" class="products">
-            <div class="container">
-                <h2 class="section-title">精选作品</h2>
-                <div class="products-grid">
-                    <div class="product-card" data-aos="zoom-in">
-                        <div class="product-image">
-                            <div class="product-placeholder">🐻</div>
-                            <div class="product-overlay">
-                                <button class="view-btn">查看详情</button>
-                            </div>
+                <div class="hero-right">
+                    <div class="hero-character character-2">
+                        <div class="character-body">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=300&h=300&fit=crop&crop=center" alt="Robot" class="character-image">
                         </div>
-                        <div class="product-info">
-                            <h4>智能小熊</h4>
-                            <p>AI设计的交互式泰迪熊</p>
-                            <div class="product-rating">
-                                <span class="stars">⭐⭐⭐⭐⭐</span>
-                                <span class="rating-text">4.9</span>
-                            </div>
+                        <div class="character-interior">
+                            <div class="interior-gears">⚙️</div>
+                            <div class="interior-city">🏙️</div>
                         </div>
-                    </div>
-                    
-                    <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="product-image">
-                            <div class="product-placeholder">🐰</div>
-                            <div class="product-overlay">
-                                <button class="view-btn">查看详情</button>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h4>科技兔兔</h4>
-                            <p>具有LED灯效的未来兔子</p>
-                            <div class="product-rating">
-                                <span class="stars">⭐⭐⭐⭐⭐</span>
-                                <span class="rating-text">4.8</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="product-image">
-                            <div class="product-placeholder">🦄</div>
-                            <div class="product-overlay">
-                                <button class="view-btn">查看详情</button>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h4>梦幻独角兽</h4>
-                            <p>会发光的魔法独角兽</p>
-                            <div class="product-rating">
-                                <span class="stars">⭐⭐⭐⭐⭐</span>
-                                <span class="rating-text">5.0</span>
-                            </div>
-                        </div>
+                        <div class="character-pencil">✏️</div>
+                        <div class="character-track"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 用户评价 -->
-        <section id="testimonials" class="testimonials">
+        <!-- 赛事进程 -->
+        <section id="progress" class="progress-section">
             <div class="container">
-                <h2 class="section-title">用户心声</h2>
-                <div class="testimonials-slider">
-                    <div class="testimonial-card active">
-                        <div class="testimonial-content">
-                            <p>"Plush Award的AI设计功能太棒了！我轻松就设计出了梦想中的毛绒玩具。"</p>
-                            <div class="testimonial-author">
-                                <div class="author-avatar">👩</div>
-                                <div class="author-info">
-                                    <h5>小美</h5>
-                                    <span>玩具设计师</span>
-                                </div>
+                <div class="section-header">
+                    <h2 class="section-title-en">COMPETITION TIMELINE</h2>
+                    <h3 class="section-title-cn">大赛时间线</h3>
+                </div>
+                <div class="progress-timeline">
+                    <div class="progress-card">
+                        <div class="card-header">
+                            <h4>作品征集</h4>
+                            <span class="card-period">2025.3.1-4.30</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="progress-item">
+                                <span class="item-icon">📝</span>
+                                <span class="item-text">作品提交</span>
+                            </div>
+                            <div class="progress-item">
+                                <span class="item-icon">👥</span>
+                                <span class="item-text">在线展示</span>
+                            </div>
+                            <div class="progress-item">
+                                <span class="item-icon">📢</span>
+                                <span class="item-text">初选公示</span>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <p>"从来没想过AI可以帮我设计出这么可爱的毛绒玩具，效果超出预期！"</p>
-                            <div class="testimonial-author">
-                                <div class="author-avatar">👨</div>
-                                <div class="author-info">
-                                    <h5>阿强</h5>
-                                    <span>创意总监</span>
-                                </div>
+                    <div class="progress-card">
+                        <div class="card-header">
+                            <h4>专业评审</h4>
+                            <span class="card-period">2025.5.1-5.31</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="progress-item">
+                                <span class="item-icon">📝</span>
+                                <span class="item-text">专家评审</span>
+                            </div>
+                            <div class="progress-item">
+                                <span class="item-icon">👥</span>
+                                <span class="item-text">公众投票</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-card">
+                        <div class="card-header">
+                            <h4>颁奖典礼</h4>
+                            <span class="card-period">2025.6.15</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="progress-item">
+                                <span class="item-icon">🏆</span>
+                                <span class="item-text">获奖公布</span>
+                            </div>
+                            <div class="progress-item">
+                                <span class="item-icon">🎨</span>
+                                <span class="item-text">作品展览</span>
                             </div>
                         </div>
                     </div>
@@ -177,13 +154,212 @@
             </div>
         </section>
 
-        <!-- CTA区域 -->
-        <section class="cta">
+        <!-- 奖项设置 -->
+        <section id="awards" class="awards-section">
             <div class="container">
-                <div class="cta-content">
-                    <h2>开启你的AI毛绒玩具创作之旅</h2>
-                    <p>加入我们的创作者社区，发现无限可能</p>
-                    <button class="btn btn-primary btn-large">立即开始</button>
+                <div class="section-header">
+                    <h2 class="section-title-en">AWARDS & PRIZES</h2>
+                    <h3 class="section-title-cn">奖项设置</h3>
+                </div>
+                <div class="awards-grid">
+                    <div class="award-card award-gold">
+                        <div class="award-header">
+                            <h4>一等奖</h4>
+                            <span class="award-count">1名</span>
+                        </div>
+                        <div class="award-amount">$5,000</div>
+                        <div class="award-desc">金奖 + 设计作品商业化</div>
+                    </div>
+                    <div class="award-card award-silver">
+                        <div class="award-header">
+                            <h4>二等奖</h4>
+                            <span class="award-count">3名</span>
+                        </div>
+                        <div class="award-amount">$2,000</div>
+                        <div class="award-desc">银奖 + 专业设计指导</div>
+                    </div>
+                    <div class="award-card award-bronze">
+                        <div class="award-header">
+                            <h4>三等奖</h4>
+                            <span class="award-count">5名</span>
+                        </div>
+                        <div class="award-amount">$1,000</div>
+                        <div class="award-desc">铜奖 + 行业资源对接</div>
+                    </div>
+                    <div class="award-card award-special">
+                        <div class="award-header">
+                            <h4>优秀平面奖</h4>
+                            <span class="award-count">5名</span>
+                        </div>
+                        <div class="award-amount">$500</div>
+                        <div class="award-desc">创新奖 + 作品展示机会</div>
+                    </div>
+                </div>
+                <div class="awards-decoration">
+                    <div class="decoration-palette">🎨</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 评委阵容 -->
+        <section id="jury" class="jury-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title-en">EXPERT JURY</h2>
+                    <h3 class="section-title-cn">专家评委</h3>
+                </div>
+                <div class="jury-grid">
+                    <div class="jury-member">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="张设计师" class="avatar-image">
+                        </div>
+                        <div class="member-info">
+                            <h4>张设计师</h4>
+                            <p>知名玩具设计专家</p>
+                        </div>
+                    </div>
+                    <div class="jury-member">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" alt="李AI专家" class="avatar-image">
+                        </div>
+                        <div class="member-info">
+                            <h4>李AI专家</h4>
+                            <p>AI技术应用专家</p>
+                        </div>
+                    </div>
+                    <div class="jury-member">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="王教授" class="avatar-image">
+                        </div>
+                        <div class="member-info">
+                            <h4>王教授</h4>
+                            <p>设计学院院长</p>
+                        </div>
+                    </div>
+                    <div class="jury-member">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="陈创意总监" class="avatar-image">
+                        </div>
+                        <div class="member-info">
+                            <h4>陈创意总监</h4>
+                            <p>知名设计公司创意总监</p>
+                        </div>
+                    </div>
+                    <div class="jury-member">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face" alt="刘CEO" class="avatar-image">
+                        </div>
+                        <div class="member-info">
+                            <h4>刘CEO</h4>
+                            <p>玩具公司CEO</p>
+                        </div>
+                    </div>
+                    <div class="jury-member">
+                        <div class="member-avatar">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=face" alt="赵研究员" class="avatar-image">
+                        </div>
+                        <div class="member-info">
+                            <h4>赵研究员</h4>
+                            <p>儿童心理学专家</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="jury-description">
+                    <p>专业评审 公正权威</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 设计说明 -->
+        <section id="design" class="design-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title-en">DESIGN BRIEF</h2>
+                    <h3 class="section-title-cn">设计说明</h3>
+                </div>
+                <div class="design-content">
+                    <div class="design-text">
+                        <div class="design-quote">
+                            <h4>「Plush Award 2025」</h4>
+                            <p>全球毛绒玩具设计大赛</p>
+                            <p>用创意点亮童心，让温暖触手可及</p>
+                        </div>
+                        <div class="design-rules">
+                            <h5>大赛简介</h5>
+                            <p>Plush Award 2025 是全球最具影响力的毛绒玩具设计大赛，旨在发掘和培养优秀的设计人才，推动毛绒玩具行业的创新发展。我们鼓励设计师们发挥创意，设计出既美观又实用的毛绒玩具作品，为全球儿童带来更多温暖和快乐。</p>
+                        </div>
+                    </div>
+                    <div class="design-video">
+                        <div class="video-placeholder">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&h=200&fit=crop&crop=center" alt="Design Tutorial" class="video-thumbnail">
+                            <div class="play-button">▶️</div>
+                            <p>设计指导视频</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 评审标准 -->
+        <section id="criteria" class="criteria-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title-en">JUDGING CRITERIA</h2>
+                    <h3 class="section-title-cn">评审标准</h3>
+                </div>
+                <div class="criteria-grid">
+                    <div class="criteria-card">
+                        <div class="criteria-icon">💡</div>
+                        <h4>创意性</h4>
+                        <p>设计理念的创新性和独特性</p>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon">❤️</div>
+                        <h4>情感性</h4>
+                        <p>作品传达的温暖和情感价值</p>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon">🎨</div>
+                        <h4>美观性</h4>
+                        <p>视觉设计和美学呈现的专业水准</p>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon">🎯</div>
+                        <h4>实用性</h4>
+                        <p>对儿童成长和教育的积极影响</p>
+                    </div>
+                </div>
+                <div class="criteria-decoration">
+                    <div class="decoration-pencil">✏️</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 参赛须知 -->
+        <section id="rules" class="rules-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title-en">ENTRY REQUIREMENTS</h2>
+                    <h3 class="section-title-cn">参赛须知</h3>
+                </div>
+                <div class="rules-content">
+                    <div class="rules-text">
+                        <ol>
+                            <li><strong>参赛资格：</strong>全球范围内的设计师、学生、创意爱好者均可参赛，个人或团队形式均可。</li>
+                            <li><strong>作品要求：</strong>提交毛绒玩具设计稿、3D模型、设计说明和制作工艺说明。</li>
+                            <li><strong>原创性：</strong>参赛作品必须为原创设计，不得侵犯他人知识产权，一经发现取消参赛资格。</li>
+                            <li><strong>提交格式：</strong>设计稿为JPG/PNG格式，3D模型为OBJ/STL格式，文件大小不超过50MB。</li>
+                            <li><strong>版权说明：</strong>获奖作品版权归主办方所有，参赛者保留署名权，主办方有权对作品进行商业开发。</li>
+                            <li><strong>评审流程：</strong>作品征集→专业评审→公众投票→获奖公布，最终结果由专家评审团决定。</li>
+                            <li><strong>奖项设置：</strong>一等奖1名奖金$5,000，二等奖3名奖金$2,000，三等奖5名奖金$1,000，创新奖5名奖金$500。</li>
+                            <li><strong>时间安排：</strong>作品征集2025年3月1日-4月30日，专业评审5月1日-5月31日，颁奖典礼6月15日。</li>
+                            <li><strong>联系方式：</strong>如有疑问请发送邮件至info@plushaward.com或关注官方社交媒体。</li>
+                            <li><strong>其他说明：</strong>主办方保留对比赛规则的最终解释权，参赛即视为同意本规则。</li>
+                        </ol>
+                    </div>
+                    <div class="rules-decoration">
+                        <div class="decoration-skateboard">🛹</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -193,57 +369,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <span class="logo-icon">🧸</span>
-                        <span class="logo-text">Plush Award</span>
-                    </div>
-                    <p>AI赋能的毛绒玩具设计平台</p>
+                <div class="footer-logos">
+                    <span class="footer-logo">AI Design</span>
+                    <span class="footer-logo">Global Competition</span>
+                    <span class="footer-logo">Toy Innovation</span>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>产品</h4>
-                    <ul>
-                        <li><a href="#">AI设计工具</a></li>
-                        <li><a href="#">3D预览</a></li>
-                        <li><a href="#">素材库</a></li>
-                        <li><a href="#">模板中心</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>社区</h4>
-                    <ul>
-                        <li><a href="#">设计师论坛</a></li>
-                        <li><a href="#">作品展示</a></li>
-                        <li><a href="#">教程中心</a></li>
-                        <li><a href="#">活动公告</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>联系我们</h4>
-                    <ul>
-                        <li><a href="#">客服支持</a></li>
-                        <li><a href="#">商务合作</a></li>
-                        <li><a href="#">意见反馈</a></li>
-                        <li><a href="#">关于我们</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Plush Award. 保留所有权利.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">📱</a>
-                    <a href="#" class="social-link">📧</a>
-                    <a href="#" class="social-link">🐦</a>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 AI玩具设计创意大赛. 保留所有权利.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

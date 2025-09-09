@@ -1,109 +1,3 @@
-// 粒子背景配置
-particlesJS('particles-js', {
-    "particles": {
-        "number": {
-            "value": 80,
-            "density": {
-                "enable": true,
-                "value_area": 800
-            }
-        },
-        "color": {
-            "value": ["#FF74D9", "#87FACF", "#667eea", "#764ba2"]
-        },
-        "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 0,
-                "color": "#000000"
-            },
-            "polygon": {
-                "nb_sides": 5
-            }
-        },
-        "opacity": {
-            "value": 0.5,
-            "random": false,
-            "anim": {
-                "enable": false,
-                "speed": 1,
-                "opacity_min": 0.1,
-                "sync": false
-            }
-        },
-        "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-                "enable": false,
-                "speed": 40,
-                "size_min": 0.1,
-                "sync": false
-            }
-        },
-        "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#FF74D9",
-            "opacity": 0.4,
-            "width": 1
-        },
-        "move": {
-            "enable": true,
-            "speed": 6,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-            }
-        }
-    },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": {
-                "enable": true,
-                "mode": "repulse"
-            },
-            "onclick": {
-                "enable": true,
-                "mode": "push"
-            },
-            "resize": true
-        },
-        "modes": {
-            "grab": {
-                "distance": 400,
-                "line_linked": {
-                    "opacity": 1
-                }
-            },
-            "bubble": {
-                "distance": 400,
-                "size": 40,
-                "duration": 2,
-                "opacity": 8,
-                "speed": 3
-            },
-            "repulse": {
-                "distance": 200,
-                "duration": 0.4
-            },
-            "push": {
-                "particles_nb": 4
-            },
-            "remove": {
-                "particles_nb": 2
-            }
-        }
-    },
-    "retina_detect": true
-});
 
 // 导航栏滚动效果
 window.addEventListener('scroll', () => {
@@ -388,6 +282,93 @@ function initScrollProgress() {
     });
 }
 
+// 语言切换功能
+function initLanguageSwitch() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const elements = {
+        // 导航栏
+        'nav-home': { zh: '首页', en: 'Home' },
+        'nav-competition': { zh: '大赛详情', en: 'Competition' },
+        'nav-news': { zh: '赛事动态', en: 'News' },
+        'nav-tools': { zh: 'AI工具集', en: 'AI Tools' },
+        'nav-contact': { zh: '联系我们', en: 'Contact' },
+        
+        // 英雄区域
+        'hero-title-1': { zh: '2025全球玩具', en: '2025 Global Toy' },
+        'hero-title-2': { zh: 'AI设计大赛', en: 'AI Design Competition' },
+        'hero-subtitle': { zh: '汇聚全球创意，用AI技术重新定义毛绒玩具设计', en: 'Gathering global creativity, redefining plush toy design with AI technology' },
+        'competition-date': { zh: '报名时间：2025年1月1日 - 2025年6月30日', en: 'Registration: Jan 1 - Jun 30, 2025' },
+        'btn-register': { zh: '立即报名', en: 'Register Now' },
+        'btn-rules': { zh: '查看规则', en: 'View Rules' },
+        'stat-participants': { zh: '参赛者', en: 'Participants' },
+        'stat-prize': { zh: '总奖金', en: 'Total Prize' },
+        'stat-global': { zh: '覆盖范围', en: 'Coverage' },
+        
+        // 大赛详情
+        'competition-title': { zh: '大赛详情', en: 'Competition Details' },
+        'awards-title': { zh: '🏆 奖项设置', en: '🏆 Awards' },
+        'requirements-title': { zh: '📋 参赛要求', en: '📋 Requirements' },
+        'schedule-title': { zh: '⏰ 时间安排', en: '⏰ Schedule' },
+        
+        // AI工具集
+        'tools-title': { zh: 'AI工具集', en: 'AI Tools' },
+        'tool-color': { zh: '智能配色工具', en: 'Smart Color Tool' },
+        'tool-generate': { zh: 'AI设计生成器', en: 'AI Design Generator' },
+        'tool-preview': { zh: '3D预览工具', en: '3D Preview Tool' },
+        'tool-modeling': { zh: '智能建模助手', en: 'Smart Modeling Assistant' },
+        'tool-use': { zh: '立即使用', en: 'Use Now' },
+        
+        // 赛事动态
+        'news-title': { zh: '赛事动态', en: 'News & Updates' },
+        'news-featured': { zh: '最新', en: 'Latest' },
+        'news-announcement': { zh: '官方公告', en: 'Official' },
+        'news-training': { zh: '培训', en: 'Training' },
+        'news-judges': { zh: '评委', en: 'Judges' },
+        
+        // 参赛者心声
+        'testimonials-title': { zh: '参赛者心声', en: 'Participant Voices' },
+        
+        // CTA区域
+        'cta-title': { zh: '加入2025全球玩具AI设计大赛', en: 'Join 2025 Global Toy AI Design Competition' },
+        'cta-subtitle': { zh: '展示你的创意才华，与全球设计师同台竞技', en: 'Showcase your creativity and compete with global designers' },
+        'cta-register': { zh: '立即报名', en: 'Register Now' },
+        'cta-guide': { zh: '下载参赛指南', en: 'Download Guide' },
+        
+        // 页脚
+        'footer-competition': { zh: '大赛信息', en: 'Competition' },
+        'footer-support': { zh: '支持', en: 'Support' },
+        'footer-contact': { zh: '联系我们', en: 'Contact Us' }
+    };
+    
+    function switchLanguage(lang) {
+        // 更新按钮状态
+        langButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+        
+        // 更新页面内容
+        Object.keys(elements).forEach(key => {
+            const element = document.querySelector(`[data-key="${key}"]`);
+            if (element && elements[key][lang]) {
+                element.textContent = elements[key][lang];
+            }
+        });
+        
+        // 更新页面语言属性
+        document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    }
+    
+    // 为语言按钮添加点击事件
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            switchLanguage(btn.dataset.lang);
+        });
+    });
+    
+    // 初始化语言
+    switchLanguage('zh');
+}
+
 // 初始化所有功能
 document.addEventListener('DOMContentLoaded', function() {
     // 添加必要的样式
@@ -403,6 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initPageLoadAnimation();
     initMouseFollowEffect();
     initScrollProgress();
+    initLanguageSwitch();
     
     // 为移动端添加响应式导航样式
     const style = document.createElement('style');
